@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(244, 244, 244);
+}
+
+.map {
+    background-color: #2d2b2b;
+}
+
+.map tr td {
+    width: 55px;
+    height: 55px;
+    background-color: #fabd6d;
+    background-size: cover;
+    text-align: center;
+    font-size: 60px;
+    line-height: 100px;
+    margin: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.map tr td.self {
+    background-image: url("./img/神乐宝宝.png");
+}
+
+.map tr td.box {
+    background-image: url("./img/箱子.png");
+}
+
+.map tr td.wall {
+    background-color: #b3b3b3 ;
+    border-radius: 5px;
+}
+
+.destination {
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/目标.png") ;
+    background-size: cover;
+}
+
+.destinationFinish {
+    opacity: 0.3;
+}
+.destinationSelf{
+    opacity: 0.3;
+}
+
+.operateOptions {
+    margin-top: 30px;
+}
+
+.operateOptions button,
+.operateOptions select {
+    width: 100px;
+    height: 40px;
+    background-color: #fabd6d;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: 0 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.operateOptions button:active{
+    background-color: #f8a935;
+}
